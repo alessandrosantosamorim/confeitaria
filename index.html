@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manu Caakes | Confeitaria artesanal</title>
+  <meta name="description" content="Bolos, kits festa e doces da Manu Caakes. Faça seu pedido pelo WhatsApp.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <a href="#inicio" class="logo" aria-label="Manu Caakes">
+      <svg viewBox="0 0 40 28" aria-hidden="true"><path d="M8 24h24l-2-9H10z" fill="#d9b779"/><path d="M11 15c0-6 4-9 9-9s9 3 9 9z" fill="#b8955a"/><circle cx="20" cy="4" r="2" fill="#b8955a"/></svg>
+      <span id="logoTxt"></span>
+    </a>
+    <a href="#" class="sacola" data-zap aria-label="Pedir pelo WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7zM9 8a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </a>
+    <nav id="menu" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#bolos">Bolos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#feedbacks">Feedbacks</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img id="heroImg" alt="">
+      <div class="hero-txt">
+        <h1 id="heroTitulo"></h1>
+        <p id="heroTexto"></p>
+        <div class="hero-btns">
+          <a href="#bolos" class="btn btn-linha">Conheça nossos produtos</a>
+          <a href="#" class="btn btn-ouro" data-zap>Fazer pedido</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2 id="sobreTitulo"></h2>
+      <div class="sobre">
+        <div id="sobreTextos"></div>
+        <div id="sobreFotos"></div>
+      </div>
+    </section>
+
+    <section id="bolos">
+      <h2 id="bolosTitulo"></h2>
+      <div class="chips" id="chips" role="tablist"></div>
+      <div class="grade" id="produtos"></div>
+    </section>
+
+    <section id="galeria" class="rosa">
+      <h2 id="galTitulo"></h2>
+      <div class="galeria-carrossel">
+        <button class="gal-seta" id="galAnt" aria-label="Foto anterior">‹</button>
+        <div class="grade-gal" id="grid-gal" aria-label="Galeria de fotos"></div>
+        <button class="gal-seta" id="galProx" aria-label="Próxima foto">›</button>
+      </div>
+      <p class="gal-posicao" id="galPosicao" aria-live="polite"></p>
+    </section>
+
+    <section id="feedbacks" class="rosa">
+      <h2 id="depoTitulo"></h2>
+      <div class="carrossel" id="carrossel"></div>
+      <div class="nav-car">
+        <button id="carAnt" aria-label="Anterior">‹</button>
+        <div class="pontos" id="pontos"></div>
+        <button id="carProx" aria-label="Próximo">›</button>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2 id="contatoTitulo"></h2>
+      <div class="info" id="info"></div>
+      <form id="form">
+        <div class="duas">
+          <input name="nome" placeholder="Seu nome" aria-label="Seu nome" required autocomplete="name">
+          <input name="tel" type="tel" placeholder="Seu telefone" aria-label="Seu telefone" autocomplete="tel">
+        </div>
+        <input name="email" type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required autocomplete="email">
+        <textarea name="msg" placeholder="Mensagem" aria-label="Mensagem" required></textarea>
+        <button class="btn btn-ouro btn-cheio" type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+
+  <div class="folha-fundo" id="detalhe" role="dialog" aria-modal="true" aria-labelledby="dNome">
+    <div class="folha">
+      <button class="x" id="dFechar" aria-label="Fechar">×</button>
+      <img id="dFoto" alt="">
+      <div class="corpo">
+        <div><h3 id="dNome"></h3><span class="preco" id="dPreco"></span></div>
+        <p id="dDesc"></p>
+        <div id="dTabela"></div>
+        <div class="obs" id="dObs"></div>
+        <a class="btn btn-ouro btn-cheio" id="dPedir" target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="x" id="lbFechar" aria-label="Fechar">×</button>
+    <button class="seta e" id="lbAnt" aria-label="Anterior">‹</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbLegenda"></figcaption></figure>
+    <button class="seta d" id="lbProx" aria-label="Próxima">›</button>
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
