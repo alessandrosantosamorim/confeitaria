@@ -224,6 +224,43 @@ nav a {
 }
 
 /* Destaques */
+.aviso-pagamento {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ouro-claro);
+  border-left: 4px solid var(--ouro);
+  border-radius: 14px;
+  background: var(--creme);
+  box-shadow: var(--sombra);
+}
+
+.aviso-pagamento-icone {
+  display: grid;
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ouro);
+  color: var(--branco);
+  font: 700 1.2rem Georgia, serif;
+}
+
+.aviso-pagamento h3 {
+  margin-bottom: 0.2rem;
+  color: var(--grafite);
+  font-size: 1.05rem;
+}
+
+.aviso-pagamento p {
+  color: var(--cinza);
+  line-height: 1.55;
+}
+
 .chips {
   display: flex;
   gap: 0.5rem;
