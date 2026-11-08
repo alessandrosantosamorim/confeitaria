@@ -216,6 +216,11 @@ nav a {
   margin: 0 auto 1.2rem;
 }
 
+#dDesc {
+  white-space: pre-line;
+  line-height: 1.7;
+}
+
 .hero-btns {
   display: grid;
   gap: 0.6rem;

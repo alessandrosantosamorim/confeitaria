@@ -284,12 +284,11 @@ const CONFIG = {
       { ativo:true, categoria:"doces", foto:f("brigadeiros"), nome:"Brigadeiros tradicionais e sabores", preco:"A partir de R$ 110,00",
         descricao:"100 unidades de sabores tradicionais ou outros sabores.",
         detalhes:{
-          mostrarParcelamento:false,
           descricaoLonga:"Valores para 100 unidades. Você pode escolher até quatro tipos.",
           colunas:["Categoria","À vista"],
           tamanhos:[
             ["Tradicionais","R$ 110,00"],
-            ["Sabores","R$ 140,00"],
+            ["Outros sabores","R$ 140,00"],
           ],
           valoresCartao:["R$ 120,00","R$ 155,00"],
           observacoes:[
@@ -314,7 +313,6 @@ const CONFIG = {
       { ativo:true, categoria:"doces", foto:f("especiais"), nome:"Brigadeiros especiais", preco:"A partir de R$ 120,00",
         descricao:"100 unidades de brigadeiro branco colorido ou sabores especiais.",
         detalhes:{
-          mostrarParcelamento:false,
           descricaoLonga:"Valores para 100 unidades. O pagamento pode ser feito em até quatro parcelas no cartão. Você pode escolher até quatro tipos.",
           colunas:["Categoria","À vista"],
           tamanhos:[
@@ -342,7 +340,7 @@ const CONFIG = {
         descricao:"Doce de leite e ninho.",
         detalhes:{
           mostrarParcelamento:false,
-          descricaoLonga:"Pedido mínimo de 20 unidades. Também são chamados de bem-vividos (para aniversários), bem-nascidos (para nascimentos), bem-aventurados (para celebrações religiosas) e bem-formados (para formaturas).",
+          descricaoLonga: "Pedido mínimo de 20 unidades.\nTambém são chamados de\nbem-vividos (para aniversários),\nbem-nascidos (para nascimentos),\nbem-aventurados (para celebrações religiosas) e\nbem-formados (para formaturas).",
           observacoes:["Sabores tradicionais:","Doce de leite","Ninho","Não inclui pérolas."],
         } },
 
@@ -357,7 +355,6 @@ const CONFIG = {
       { ativo:true, categoria:"doces", foto:f("salgados"), nome:"Salgados tradicionais", preco:"R$ 55,00",
         descricao:"100 unidades de salgados tradicionais.",
         detalhes:{
-          mostrarParcelamento:false,
           descricaoLonga:"100 unidades de salgados tradicionais por R$ 55,00 à vista ou R$ 59,00 no cartão.",
           colunas:["100 unidades","À vista"],
           tamanhos:[["Tradicionais","R$ 55,00"]],
@@ -385,7 +382,6 @@ const CONFIG = {
       { ativo:true, categoria:"doces", foto:f("salgadosespeciais"), nome:"Salgados especiais", preco:"R$ 75,00",
         descricao:"100 unidades de salgados especiais.",
         detalhes:{
-          mostrarParcelamento:false,
           descricaoLonga:"100 unidades de salgados especiais por R$ 75,00 à vista ou R$ 80,00 no cartão.",
           colunas:["100 unidades","À vista"],
           tamanhos:[["Especiais","R$ 75,00"]],
