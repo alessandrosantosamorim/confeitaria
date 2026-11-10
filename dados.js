@@ -313,7 +313,7 @@ const CONFIG = {
       { ativo:true, categoria:"doces", foto:f("especiais"), nome:"Brigadeiros especiais", preco:"A partir de R$ 120,00",
         descricao:"100 unidades de brigadeiro branco colorido ou sabores especiais.",
         detalhes:{
-          descricaoLonga:"Valores para 100 unidades. O pagamento pode ser feito em até quatro parcelas no cartão. Você pode escolher até quatro tipos.",
+          descricaoLonga:"Valores para 100 unidades. Você pode escolher até quatro tipos.",
           colunas:["Categoria","À vista"],
           tamanhos:[
             ["Brigadeiro branco colorido","R$ 120,00"],
@@ -340,7 +340,7 @@ const CONFIG = {
         descricao:"Doce de leite e ninho.",
         detalhes:{
           mostrarParcelamento:false,
-          descricaoLonga: "Pedido mínimo de 20 unidades.\nTambém são chamados de\nbem-vividos (para aniversários),\nbem-nascidos (para nascimentos),\nbem-aventurados (para celebrações religiosas) e\nbem-formados (para formaturas).",
+          descricaoLonga: "Pedido mínimo de 20 unidades.\nTambém são chamados de\nBem-vividos (para aniversários),\nBem-nascidos (para nascimentos),\nBem-aventurados (para celebrações religiosas) e\nBem-formados (para formaturas).",
           observacoes:["Sabores tradicionais:","Doce de leite","Ninho","Não inclui pérolas."],
         } },
 
