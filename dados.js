@@ -130,7 +130,7 @@ const CONFIG = {
           ],
         } },
 
-      { ativo:true, categoria:"bolos", foto:f("bolo-vulcao"), nome:"Bolos vulcão", preco:"A partir de R$ 45,00",
+      { ativo:true, categoria:"bolos", foto:f("bolo-vulcao"), nome:"Bolo vulcão", preco:"A partir de R$ 45,00",
         descricao:"Serve cerca de 8 a 10 fatias.",
         detalhes:{
           descricaoLonga:"Bolos vulcão, ideais para presentear. Não acompanham adicionais.",
