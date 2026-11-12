@@ -396,6 +396,19 @@ const CONFIG = {
             "Pastel de forno de frango",
           ],
         } },
+
+      { ativo:true, categoria:"bolos", foto:f("bento"), nome:"Bento Cake", preco:"R$ 35,00",
+        descricao:"Mini bolo individual com cerca de 10 cm.",
+        detalhes:{
+          descricaoLonga:"Conhecido por bonecos engraçados, frases irônicas, românticas ou personalizadas.",
+          colunas:["Tamanho","À vista"],
+          tamanhos:[["Bento Cake","R$ 35,00"]],
+          valoresCartao:["R$ 38,00"],
+          observacoes:[
+            "Ocasiões: ideal para presentes, mesversários, aniversários íntimos e datas comemorativas como o Dia dos Namorados e o Dia das Mães.",
+            "Costuma vir acompanhado de uma velinha.",
+          ],
+        } },
     ],
   },
 
@@ -403,7 +416,7 @@ const CONFIG = {
     titulo: "Galeria",
     fotos: [
       { foto:f("manu1")},  
-      { foto:f("vulcao")},      
+      { foto:f("bolo-vulcao")},      
       { foto:f("foto4")},
       { foto:f("foto2")},
       { foto:f("foto6")},
