@@ -228,6 +228,29 @@ nav a {
   margin: 0 auto;
 }
 
+.indicador-rolagem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.1rem;
+  color: var(--cinza);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.indicador-rolagem span {
+  color: var(--ouro);
+  font-size: 1.35rem;
+  line-height: 1;
+  animation: indicar-rolagem 1.2s ease-in-out infinite;
+}
+
+@keyframes indicar-rolagem {
+  50% {
+    transform: translateY(4px);
+  }
+}
+
 /* Destaques */
 .aviso-pagamento {
   display: flex;
@@ -1039,6 +1062,10 @@ textarea {
     flex: 1 1 190px;
   }
 
+  .indicador-rolagem {
+    display: none;
+  }
+
   .chips {
     justify-content: center;
     margin: 0 0 1.5rem;
@@ -1143,6 +1170,13 @@ textarea {
 
   .card .acoes {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 899px) {
+  #sobre {
+    padding-top: 2rem;
+    scroll-margin-top: 72px;
   }
 }
 
