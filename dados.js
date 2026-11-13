@@ -17,7 +17,7 @@ const CONFIG = {
   hero: {
     foto: f("manu1"),
     titulo: "Bolos, doces e salgados",
-    texto: "Mais do que sabor: uma experiência.",
+    texto: "Mais que sabor, uma experiência!",
   },
 
   produtos: {
