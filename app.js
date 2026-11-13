@@ -52,8 +52,8 @@ function desenha() {
   $("produtos").innerHTML = ativos.map((p, i) => ({ p, i })).filter(({ p }) => filtro === "todos" || p.categoria === filtro).map(({ p, i }) => `
     <article class="card"><div class="foto">${img(p.foto, p.nome)}</div>
       <div class="rotulo"><h3>${esc(p.nome)}</h3><p>${esc(p.descricao)}</p><span class="preco">${esc(p.preco)}</span></div>
-      <div class="acoes"><button class="btn btn-linha" data-mais="${i}">Ler mais</button>
-        <a class="btn btn-ouro" href="${zap(`Olá! Gostaria de pedir: ${p.nome}.`)}" target="_blank" rel="noopener">Pedir</a></div>
+      <div class="acoes${p.podePedir === false ? " sem-pedido" : ""}"><button class="btn btn-linha" data-mais="${i}">Ler mais</button>
+        ${p.podePedir === false ? "" : `<a class="btn btn-ouro" href="${zap(`Olá! Gostaria de pedir: ${p.nome}.`)}" target="_blank" rel="noopener">Pedir</a>`}</div>
     </article>`).join("");
 }
 $("chips").onclick = e => { const b = e.target.closest("[data-c]"); if (b) { filtro = b.dataset.c; desenha(); } };
@@ -81,6 +81,7 @@ $("produtos").addEventListener("click", e => {
     return `<li${titulo ? ` class="obs-titulo${categoria}"` : ""}>${esc(o)}</li>`;
   }).join("")}</ul>` : "";
   $("dPedir").href = zap(`Olá! Gostaria de pedir: ${p.nome}.`);
+  $("dPedir").hidden = p.podePedir === false;
   det.classList.add("on-m"); document.body.style.overflow = "hidden"; $("dFechar").focus();
 });
 det.addEventListener("click", e => alternaParcelamentos(e));
@@ -187,9 +188,9 @@ const ct = C.contato;
 set("contatoTitulo", ct.titulo);
 $("info").innerHTML = `
   <div><b>WhatsApp</b><a href="${zap(C.mensagemPedido)}" target="_blank" rel="noopener">${esc(ct.whatsappExibido)}</a></div>
-  <div><b>Telefone</b><a href="tel:${ct.telefone.replace(/\D/g, "")}">${esc(ct.telefone)}</a></div>
   <div><b>Instagram</b><a href="${esc(ct.instagramLink)}" target="_blank" rel="noopener">${esc(ct.instagram)}</a></div>
-  <div><b>Horário</b>${esc(ct.horario)}</div>
+  <div><b>Orçamentos (online e presencial)</b>${esc(ct.horarioOrcamentos)}</div>
+  <div><b>Retirada e entrega dos produtos</b>${esc(ct.horarioRetiradaEntrega)}</div>
   <div style="grid-column:1/-1"><b>Endereço</b>${esc(ct.endereco)}</div>`;
 set("rodape", `© ${new Date().getFullYear()} ${C.nome}`);
 $("form").addEventListener("submit", e => {   // sem servidor: envia pelo WhatsApp

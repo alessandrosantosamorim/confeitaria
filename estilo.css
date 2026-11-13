@@ -475,6 +475,10 @@ nav a {
   margin-top: 0.45rem;
 }
 
+.card .acoes.sem-pedido {
+  grid-template-columns: 1fr;
+}
+
 .card .btn {
   min-height: 40px;
   padding: 0 0.4rem;
@@ -842,6 +846,10 @@ textarea {
   padding: 1.1rem 1.1rem 1.5rem;
   display: grid;
   gap: 1rem;
+}
+
+.folha .btn[hidden] {
+  display: none;
 }
 
 .corpo h3 {

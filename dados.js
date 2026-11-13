@@ -159,7 +159,7 @@ const CONFIG = {
           ],
         } },
 
-      { ativo:true, categoria:"bolos", foto:f("recheio"), nome:"Recheios", preco:"Consulte",
+      { ativo:true, categoria:"bolos", foto:f("recheio"), nome:"Recheios", preco:"Consulte", podePedir:false,
         descricao:"Tradicionais, com geleia e especiais.",
         detalhes:{
           mostrarParcelamento:false,
@@ -282,7 +282,7 @@ const CONFIG = {
         } },
 
       { ativo:true, categoria:"doces", foto:f("brigadeiros"), nome:"Brigadeiros tradicionais e sabores", preco:"A partir de R$ 110,00",
-        descricao:"100 unidades de sabores tradicionais ou outros sabores.",
+        descricao:"100 unidades.",
         detalhes:{
           descricaoLonga:"Valores para 100 unidades. Você pode escolher até quatro tipos.",
           colunas:["Categoria","À vista"],
@@ -311,7 +311,7 @@ const CONFIG = {
         } },
 
       { ativo:true, categoria:"doces", foto:f("especiais"), nome:"Brigadeiros especiais", preco:"A partir de R$ 120,00",
-        descricao:"100 unidades de brigadeiro branco colorido ou sabores especiais.",
+        descricao:"100 unidades.",
         detalhes:{
           descricaoLonga:"Valores para 100 unidades. Você pode escolher até quatro tipos.",
           colunas:["Categoria","À vista"],
@@ -454,9 +454,9 @@ const CONFIG = {
   contato: {
     titulo: "Contato",
     whatsappExibido: "(83) 98119-2781",
-    telefone: "(83) 98119-2781",
     instagram: "@manu_caakes", instagramLink: "https://www.instagram.com/manu_caakes?psln=MXh5N2F5NjduM2Ywdw==",
     endereco: "Rua Durval da Costa Lira, --, Casserengue/PB",
-    horario: "Seg. a sáb., das 9h às 20h",
+    horarioOrcamentos: "De segunda a domingo, das 9h às 20h.",
+    horarioRetiradaEntrega: "Retiradas: de segunda a domingo, das 10h às 17h15. Entregas: de segunda a domingo, das 10h às 17h20. Horários a combinar.",
   },
 };
