@@ -740,6 +740,15 @@ nav a {
   grid-column: 1 / -1;
 }
 
+.info-endereco a {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: var(--ouro);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .info b {
   display: block;
   color: var(--ouro);
