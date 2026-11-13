@@ -189,9 +189,11 @@ set("contatoTitulo", ct.titulo);
 $("info").innerHTML = `
   <div><b>WhatsApp</b><a href="${zap(C.mensagemPedido)}" target="_blank" rel="noopener">${esc(ct.whatsappExibido)}</a></div>
   <div><b>Instagram</b><a href="${esc(ct.instagramLink)}" target="_blank" rel="noopener">${esc(ct.instagram)}</a></div>
-  <div><b>Orçamentos (online e presencial)</b>${esc(ct.horarioOrcamentos)}</div>
-  <div><b>Retirada e entrega dos produtos</b>${esc(ct.horarioRetiradaEntrega)}</div>
-  <div style="grid-column:1/-1"><b>Endereço</b>${esc(ct.endereco)}</div>`;
+  <div><b>Orçamentos on-line</b>${esc(ct.horarioOrcamentosOnline)}</div>
+  <div><b>Atendimento presencial</b>${esc(ct.atendimentoPresencial)}</div>
+  <div><b>Retirada de pedidos</b>${esc(ct.horarioRetirada)}</div>
+  <div><b>Entrega</b>${esc(ct.horarioEntrega)}</div>
+  <div class="info-endereco"><b>Endereço</b>${esc(ct.endereco)}</div>`;
 set("rodape", `© ${new Date().getFullYear()} ${C.nome}`);
 $("form").addEventListener("submit", e => {   // sem servidor: envia pelo WhatsApp
   e.preventDefault();

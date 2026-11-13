@@ -455,8 +455,10 @@ const CONFIG = {
     titulo: "Contato",
     whatsappExibido: "(83) 98119-2781",
     instagram: "@manu_caakes", instagramLink: "https://www.instagram.com/manu_caakes?psln=MXh5N2F5NjduM2Ywdw==",
-    endereco: "Rua Durval da Costa Lira, --, Casserengue/PB",
-    horarioOrcamentos: "De segunda a domingo, das 9h às 20h.",
-    horarioRetiradaEntrega: "Retiradas: de segunda a domingo, das 10h às 17h15. Entregas: de segunda a domingo, das 10h às 17h20. Horários a combinar.",
+    endereco: "Panificadora São Bento, Casserengue/PB",
+    horarioOrcamentosOnline: "De segunda a sexta-feira, das 9h às 19h.",
+    atendimentoPresencial: "Mediante agendamento. Entre em contato para marcar um horário.",
+    horarioRetirada: "De segunda-feira a sábado, das 10h às 19h; aos domingos, das 10h às 14h.",
+    horarioEntrega: "Mediante combinação prévia, conforme a distância, para cálculo da taxa de entrega.",
   },
 };

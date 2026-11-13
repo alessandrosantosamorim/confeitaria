@@ -736,6 +736,10 @@ nav a {
   font-size: 0.95rem;
 }
 
+.info-endereco {
+  grid-column: 1 / -1;
+}
+
 .info b {
   display: block;
   color: var(--ouro);
@@ -766,6 +770,12 @@ form {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.6rem;
+}
+
+@media (max-width: 599px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
 }
 
 input,
