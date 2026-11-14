@@ -32,7 +32,7 @@ const CONFIG = {
       { ativo:true, categoria:"bolos", foto:f("bolotradicional"), nome:"Bolos tradicionais", preco:"A partir de R$ 68,00",
         descricao:"Com cobertura de chantininho, de 10 a 100 fatias.",
         detalhes:{
-          descricaoLonga:"Bolos em chantininho com recheios tradicionais. Em até 4x no cartão.",
+          descricaoLonga:"Bolos em chantininho com recheios tradicionais.",
           colunas:["Tamanho","À vista"],
           tamanhos:[
             ["10-12 fatias","R$ 68,00"], ["15-18 fatias","R$ 85,00"],
@@ -60,7 +60,7 @@ const CONFIG = {
       { ativo:true, categoria:"bolos", foto:f("boloquadrado"), nome:"Bolos retangulares", preco:"A partir de R$ 150,00",
         descricao:"Bolos retangulares, de 25 a 60 fatias.",
         detalhes:{
-          descricaoLonga:"Bolos retangulares. Em até 4x no cartão.",
+          descricaoLonga:"Bolos retangulares.",
           colunas:["Tamanho","À vista"],
           tamanhos:[
             ["20-22 fatias","R$ 120,00"],
@@ -84,7 +84,7 @@ const CONFIG = {
       { ativo:true, categoria:"bolos", foto:f("2andares"), nome:"Bolos de 2 andares", preco:"A partir de R$ 210,00",
         descricao:"Com cobertura de chantininho, de 30 a 110 fatias.",
         detalhes:{
-          descricaoLonga:"Bolos de dois andares em chantininho. Em até 4x no cartão.",
+          descricaoLonga:"Bolos de dois andares em chantininho.",
           colunas:["Tamanho","À vista"],
           tamanhos:[
             ["30-35 fatias","R$ 210,00"], ["40-45 fatias","R$ 240,00"],
@@ -108,7 +108,7 @@ const CONFIG = {
       { ativo:true, categoria:"bolos", foto:f("3andares"), nome:"Bolos de 3 andares", preco:"A partir de R$ 370,00",
         descricao:"Com cobertura de chantininho, de 50 a 200 fatias.",
         detalhes:{
-          descricaoLonga:"Bolos de três andares em chantininho. Em até 4x no cartão.",
+          descricaoLonga:"Bolos de três andares em chantininho.",
           colunas:["Tamanho","À vista"],
           tamanhos:[
             ["50-60 fatias","R$ 370,00"], ["70-80 fatias","R$ 470,00"],
@@ -460,6 +460,6 @@ const CONFIG = {
     horarioOrcamentosOnline: "De segunda a sexta-feira, das 9h às 19h.",
     atendimentoPresencial: "Mediante agendamento. Entre em contato para marcar um horário.",
     horarioRetirada: "De segunda-feira a sábado, das 10h às 19h; aos domingos, das 10h às 14h.",
-    horarioEntrega: "Combinamos conforme a distância para cálculo da taxa de entrega.",
+    horarioEntrega: "Combinamos o horário e avaliamos a distância para calcular o valor final da entrega.",
   },
 };
