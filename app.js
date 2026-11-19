@@ -193,7 +193,7 @@ $("info").innerHTML = `
   <div><b>Atendimento presencial</b>${esc(ct.atendimentoPresencial)}</div>
   <div><b>Retirada de pedidos</b>${esc(ct.horarioRetirada)}</div>
   <div><b>Entrega</b>${esc(ct.horarioEntrega)}</div>
-n   <div class="info-endereco"><b>Endereço</b>
+  <div class="info-endereco"><b>Endereço</b>
     <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${ct.nomeEstabelecimento}, ${ct.endereco}`)}" target="_blank" rel="noopener">${esc(ct.nomeEstabelecimento)}</a>, ${esc(ct.endereco)}
   </div>`;
 set("rodape", `© ${new Date().getFullYear()} ${C.nome}`);
