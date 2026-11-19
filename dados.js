@@ -336,6 +336,22 @@ const CONFIG = {
           ],
         } },
 
+      { ativo:true, categoria:"doces", foto:f("docesespeciais"), nome:"Doces Personalizados", preco:"A partir de R$ 120,00",
+        descricao:"A partir de 20 unidades.",
+        detalhes:{
+          descricaoLonga:"A partir de 20 unidades.",
+          colunas:["Categoria","À vista"],
+          tamanhos:[["Personalizados","R$ 120,00"]],
+          valoresCartao:["R$ 132,00"],
+          observacoes:[
+            "Sabores:",
+            "Ninho (Ou Coloridos)",
+            "Chocolate (No cacau)",
+            "Consulte os carimbos de acordo com a disponibilidade.",
+            "Caso não tenha o modelo desejado, mandamos confeccionar.",
+          ],
+        } },
+
       { ativo:true, categoria:"doces", foto:f("bem-casados"), nome:"Bem-casados", preco:"R$ 4,00 cada",
         descricao:"Doce de leite e ninho.",
         detalhes:{
@@ -379,13 +395,13 @@ const CONFIG = {
           ],
         } },
 
-      { ativo:true, categoria:"doces", foto:f("salgadosespeciais"), nome:"Salgados especiais", preco:"R$ 75,00",
+      { ativo:true, categoria:"doces", foto:f("salgadosespeciais"), nome:"Salgados especiais", preco:"R$ 85,00",
         descricao:"100 unidades de salgados especiais.",
         detalhes:{
-          descricaoLonga:"100 unidades de salgados especiais por R$ 75,00 à vista ou R$ 80,00 no cartão.",
+          descricaoLonga:"100 unidades de salgados especiais por R$ 85,00 à vista ou R$ 90,00 no cartão.",
           colunas:["100 unidades","À vista"],
-          tamanhos:[["Especiais","R$ 75,00"]],
-          valoresCartao:["R$ 80,00"],
+          tamanhos:[["Especiais","R$ 85,00"]],
+          valoresCartao:["R$ 90,00"],
           observacoes:[
             "Escolha dois tipos para cada 100 unidades:",
             "Cone crocante de doce de leite",
@@ -393,7 +409,6 @@ const CONFIG = {
             "Cone crocante de brigadeiro branco",
             "Cone crocante salgado de frango",
             "Pastel agridoce de carne",
-            "Pastel de forno de frango",
           ],
         } },
 
