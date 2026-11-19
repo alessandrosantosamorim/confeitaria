@@ -458,7 +458,7 @@ const CONFIG = {
   feedbacks: {
     titulo: "O que nossos clientes dizem",
     lista: [   // foto é opcional: sem foto aparece a inicial do nome
-      { ativo:true, foto:"", nome:"", estrelas:5, texto:"Foi tudo um sucesso! O bolo, os salgados, os doces e os pães estavam maravilhosos. Dá para sentir o carinho e o capricho em cada detalhe. Muito obrigada por fazer parte desse momento especial!" },
+      { ativo:true, foto:"", nome:"daiane", estrelas:5, texto:"Foi tudo um sucesso! O bolo, os salgados, os doces e os pães estavam maravilhosos. Dá para sentir o carinho e o capricho em cada detalhe. Muito obrigada por fazer parte desse momento especial!" },
   { ativo:true, foto:"", nome:"Rosangela", estrelas:5, texto:"Manu, seu bolo estava lindo e delicioso — superou minhas expectativas! Foi o melhor que já comi. Que Deus abençoe você e sua família. Em João Pessoa, não encontrei confeitaria com bolo tão gostoso quanto o seu." },
       { ativo:true, foto:"", nome:"Jéssica", estrelas:5, texto:"Meus bolos ficaram perfeitos, exatamente como imaginei. Você é uma profissional maravilhosa! Que Deus abençoe você sempre." },
       { ativo:true, foto:"", nome:"Mayara", estrelas:5, texto:"Manu, muito obrigada por todo carinho e capricho! Estava tudo maravilhoso, do bolo aos salgados, doces e pães. Foi tudo um sucesso e só recebemos elogios! Mesmo levando tudo para Solânea, fiz questão de encomendar contigo, porque confio no seu trabalho. Que Deus continue abençoando suas mãos e sua padaria! ❤️" },
